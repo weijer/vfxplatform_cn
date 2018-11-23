@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VFX Platform : Reference Platform for VFX Software"/>
+    <meta name="author" content="Visual Effects Society Technology Committee">
+    <!-- link rel="shortcut icon" href="../../assets/ico/favicon.ico" -->
+
+    <title>VFX参考平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/vfxplatform-template.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VFX参考平台</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">主页</a></li>
+                <li><a href="FAQ/index.html">常见问题</a></li>
+                <li><a href="about/index.html">关于</a></li>
+                <li><a href="contact/index.html">联系</a></li>
+                <li><a href="http://www.vfxplatform.com/">vfxplatform官网</a></li>
+                <li><a href="/">返回主站</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="vfxplatform-template">
+        <h3>介绍</h3>
+        <p>
+            <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()" style="">
+               视效参考平台是一套工具和库的版本集合，可用作构建VFX行业软件的通用目标平台。
+            </span>
+            <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()">
+			  其目的是尽量减少不同软件包之间的不兼容性，减轻基于Linux的流水线的支持负担，并鼓励软件供应商进一步采用Linux。</span>
+            <span class="notranslate" onmouseover="_tipon(this)"  onmouseout="_tipoff()">
+                <a href="https://www.visualeffectssociety.com/ves-committees?jump-9">视觉效果技术委员会</a>合作进行更新。
+            </span>
+        </p>
+        <h3>当前状态</h3>
+
+        <p>2019年日历年（CY2019）参考平台是2019年所有主要软件发行版本的目标。</p>
+
+        <p><strong>2018年9月12日</strong> - CY2019最终版本，OpenVDB更新到6.X和ACE到1.1，将会反映在这些重要行业包的近期或即将发布的主要版本。</p>
+
+        <p><strong>2018年7月22日</strong> - CY2019草案更新- OpenExR上升到2.3.x.</p>
+
+        <p><strong>2018年5月20日</strong>
+            - CY2019草案发表。 由于需要集中精力升级到最新的Qt长期支持版本，所以向Python 3的迁移已经被推进到CY2020。软件供应商被要求在2019年提供Python 3技术预览版本，以帮助工作室在迁移过程中进行测试。 我们目前正在征求对该草案的反馈意见，请发送至
+            <a href="mailto:feedback@vfxplatform.com">feedback@vfxplatform.com</a>
+            或分享
+            <a href="https://groups.google.com/forum/#!forum/vfx-platform-discuss">vfx-platform-discuss</a>.
+        </p>
+
+        <p><strong>2017年11月26日</strong> - CY2018对编译器版本（现在是gcc 6.3.1）进行了更改。 这成功解决了使用gcc 5.3.1发现的问题。</p>
+
+        <p><strong>2017年8月28日</strong> - 添加了gcc 5的注释并更新了Qt注释以包含qtdeclarative修改的链接。</p>
+
+        <p><strong>2017年8月3日</strong> - 在年度SIGGRAPH VFX参考平台上，CY2018平台被批准为最终版，没有进一步的计划变更。</p>
+
+        <p><strong>2017年7月2日</strong> - 针对Qt和ACES的CY2018草案的小更新。</p>
+
+        <p><strong>2017年4月29日</strong> - 2018年计划草案发布，对gcc和glibc进行了重大升级。这也带来了我们打算在2020年Python 2支持结束之前将CY2019迁移到Python 3的意图。我们目前正在征求对该草案的反馈，所以请发送到 <a href="mailto:feedback@vfxplatform.com">feedback@vfxplatform.com</a> 或分享 <a href="https://groups.google.com/forum/#!forum/vfx-platform-discuss">vfx平台讨论</a>。 我们预计将于七月份在SIGGRAPH上发布CY2018最终稿。</p>
+
+        <p><strong>2016年8月1日</strong> - CY2017 Final现已发布OpenSubdiv和OpenVDB，除了Boost，Ptex，Alembic和TBB之外，还有对草案的反馈。</p>
+
+        <p><strong>2016年6月28日</strong> - VFX参考平台对Qt 5.6.1版本的Qt修改现在可以从 <a href="https://github.com/autodesk-forks/qtbase/tree/adsk-contrib/vfx/5.6.1">qtbase</a> 和 <a href="https://github.com/autodesk-forks/qtx11extras/tree/adsk-contrib/vfx/5.6.1">qtx11extras</a>这些分支中获得。</p>
+
+        <p><strong>2016年6月20日</strong> - CY2017草稿发布，征询社区意见。 CY2017的主题是在转换到Qt 5之后的一年中降低代码更改。</p>
+
+        <p><strong>2015年10月27日</strong> -由于该版本现在被定位为长期支持版本，因此已提议将2016年的最新版本从Qt 5.5.x升级到Qt 5.6.x。 请 <a href="http://bit.ly/CY2016Qt5">参阅这里</a> 了解更多详情。</p>
+
+        <h3>参考平台</h3>
+
+        <p>每个年度参考平台由日历年指定，其中主要产品发布应该针对该特定参考。</p>
+
+        <p>所有版本都应被视为确切需要的版本，除了那些组件 <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> 表示：</p>
+
+        <ul>
+            <li>对于在运行时提供库的系统（或软件），版本应视为所需的最低版本。</li>
+            <li>否则，对于针对该库的软件构建软件，版本应被视为允许的最高版本。</li>
+        </ul>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="col-md-2">&nbsp;</th>
+                    <th class="col-md-2">CY2019</th>
+                    <th class="col-md-2">CY2018</th>
+                    <th class="col-md-2">CY2017</th>
+                    <th class="col-md-2">CY2016</th>
+                    <th class="col-md-2">CY2015</th>
+                    <th class="col-md-2">CY2014</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="font-weight:bold">gcc <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+                    </td>
+                    <td>6.3.1 (<a href="#footnote-gcc6" data-toggle="tooltip" data-placement="top" title="See the gcc 6 note below for more information on availability and configuration">
+                        见注</a>)
+                    </td>
+                    <td>6.3.1 (<a href="#footnote-gcc6" data-toggle="tooltip" data-placement="top"
+                                  title="See the gcc 6 note below for more information on availability and configuration">见注</a>)
+                    </td>
+                    <td><a href="#footnote-gcc" data-toggle="tooltip" data-placement="top"
+                           title="Vanilla 4.8.2 has a serious bug but some distros ship with it fixed, see footnote below for more details">4.8.2
+                        或修正版</a> 4.8.3
+                    </td>
+                    <td><a href="#footnote-gcc" data-toggle="tooltip" data-placement="top"
+                           title="Vanilla 4.8.2 has a serious bug but some distros ship with it fixed, see footnote below for more details">4.8.2
+                        或修正版</a> 4.8.3
+                    </td>
+                    <td>4.8.2</td>
+                    <td>4.1.2</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">glibc <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+                    </td>
+                    <td>2.17</td>
+                    <td>2.17</td>
+                    <td>2.12</td>
+                    <td>2.12</td>
+                    <td>2.12</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">python<br>(built with ucs4)</td>
+                    <td>2.7.9 - 2.7.最新的<br><a href="#footnote-python3" data-toggle="tooltip" data-placement="top" title="Notes on migration to Python 3">3.6.x (技术预览版)<br>Python 3在CY2020升级</a></td>
+                    <td>2.7.5 - 2.7.最新的<br>Python 3计划在2019年完成。</td>
+                    <td>2.7.5 - 2.7.最新的</td>
+                    <td>2.7.5 - 2.7.最新的</td>
+                    <td>2.7.x</td>
+                    <td>2.7.3</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Qt</td>
+                    <td>5.12.x</td>
+                    <td><a href="#footnote-qt" data-toggle="tooltip" data-placement="top"
+                           title="See footnote for details on Qt modifications">5.6.1 - 5.6.最新的 (修正版)</a></td>
+                    <td><a href="#footnote-qt" data-toggle="tooltip" data-placement="top"
+                           title="See footnote for details on Qt modifications">5.6.1 (修正版)</a></td>
+                    <td><a href="#footnote-qt" data-toggle="tooltip" data-placement="top"
+                           title="See footnote for details on Qt modifications">5.6.1 (修正版)</a></td>
+                    <td>4.8.x</td>
+                    <td>4.8.5</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">PyQt</td>
+                    <td>5.12</td>
+                    <td>5.6</td>
+                    <td>5.6</td>
+                    <td>5.6</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Qt for Python<br>(PySide)</td>
+                    <td>5.12 branch</td>
+                    <td>2.0.x</td>
+                    <td>2.0.x</td>
+                    <td>2.0</td>
+                    <td>1.2.x</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">NumPy</td>
+                    <td>1.14.x</td>
+                    <td>1.12.1</td>
+                    <td>1.9.2</td>
+                    <td>1.9.2</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">OpenEXR</td>
+                    <td>2.3.x</td>
+                    <td>2.2.x</td>
+                    <td>2.2.x</td>
+                    <td>2.2.x</td>
+                    <td>2.2.x</td>
+                    <td>2.0.1</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Ptex</td>
+                    <td>2.1.33</td>
+                    <td>2.1.28</td>
+                    <td>2.1.28</td>
+                    <td>2.0.42</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">OpenSubdiv</td>
+                    <td>3.3.x</td>
+                    <td>3.3.x</td>
+                    <td>3.1.x</td>
+                    <td>3.0.x</td>
+                    <td>2.5.x</td>
+                    <td>2.3.3</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">OpenVDB</td>
+                    <td>6.x</td>
+                    <td>5.x</td>
+                    <td>4.x</td>
+                    <td>3.x</td>
+                    <td>3.0.x</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Alembic</td>
+                    <td>1.7.x</td>
+                    <td>1.7.x</td>
+                    <td>1.6.x</td>
+                    <td>1.5.8</td>
+                    <td>1.5.x</td>
+                    <td>1.5.x</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">FBX</td>
+                    <td>2019.x</td>
+                    <td>2018.x</td>
+                    <td>最新的</td>
+                    <td>最新的</td>
+                    <td>最新的</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">OpenColorIO</td>
+                    <td>1.1.0</td>
+                    <td>1.0.9</td>
+                    <td>1.0.9</td>
+                    <td>1.0.9</td>
+                    <td>1.0.9</td>
+                    <td>1.0.7</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">ACES</td>
+                    <td>1.1</td>
+                    <td>1.0.3 - 1.0.最新的</td>
+                    <td>1.0.x</td>
+                    <td>1.0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Boost</td>
+                    <td>1.66</td>
+                    <td>1.61</td>
+                    <td>1.61</td>
+                    <td>1.55</td>
+                    <td>1.55</td>
+                    <td>1.53</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Intel TBB <span class="glyphicon glyphicon-sort"
+                                                                 aria-hidden="true"></span></td>
+                    <td>2018</td>
+                    <td>2017 更新包 6</td>
+                    <td>4.4</td>
+                    <td>4.3</td>
+                    <td>4.2</td>
+                    <td>4.1</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">Intel MKL</td>
+                    <td>2018</td>
+                    <td>2017 更新包 2</td>
+                    <td>11.3</td>
+                    <td>11.3</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">C++ API/SDK</td>
+                    <td>C++14</td>
+                    <td>C++14</td>
+                    <td>C++11</td>
+                    <td>C++11</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="panel panel-default" id="footnote-python3">
+            <div class="panel-heading"><small>注 - Python 3</small></div>
+            <div class="panel-body">
+                <small>
+                    <p>由于以下原因，迁移到Python 3已经从2019年推迟到2020年：</p>
+                    <ul>
+                        <li>没有Qt 5.6，Python 3和PySide 2的支持组合，所以首先需要升级Qt。</li>
+                        <li>在同一年升级Qt和Python对软件供应商和大型工作室来说是一个太大的承诺。</li>
+                    </ul>
+                    <p>CY2020中的Python 3是一个坚定的决定，它将是一个必需的升级，因为Python 2将在2020年之后不再受支持。强烈建议软件供应商在2019年提供技术预览版本，以帮助工作室在Python迁移过程中进行测试。</p>
+                </small>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="footnote-gcc6">
+            <div class="panel-heading">
+                <small>注 - gcc 6</small>
+            </div>
+            <div class="panel-body">
+                <small>
+                    <p><strong>2017年11月26日更新</strong> - 由于旧版本发现的集成问题，CY2018由gcc 5更改为gcc 6。</p>
+                    <p>通过安装 <a href="https://access.redhat.com/documentation/en-us/red_hat_developer_toolset/6/html/6.1_release_notes/index">Redhat DTS 6.1，</a> Redhat / CentOS系统可以获得gcc 6.3.1。 </p>
+                    <p>由于gcc 5.1，libstdc ++ <a href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html"> 引入了一个新库ABI，</a> 它包含std :: string和std :: list的新实现。 为了保持向后兼容，旧的实现仍然与新的实现并行支持。 实现的选择使用_GLIBCXX_USE_CXX11_ABI宏进行，并且VFX参考平台仍使用旧选项，因此编译器设置应为_GLIBCXX_USE_CXX11_ABI = 0。 一旦主要的Linux发行版发生转变，该平台将在未来的一年转向更新的实施。 RHEL / CentOS 7和Redhat DTS默认仍使用原始实现。</p>
+                </small>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="footnote-gcc">
+            <div class="panel-heading">
+                <small>注 - gcc 4</small>
+            </div>
+            <div class="panel-body">
+                <small>
+                    <p>vanilla gcc 4.8.2有一个 <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=58800">严重的bug，</a> 在4.8.3中已经修复，一些Linux发行版供应商实际上发布了一个补丁版本为4.8.2。 平台给出了4.8.2作为CY2016的一个选项的原因是，这个gcc版本是 <a href="http://developerblog.redhat.com/2014/03/12/rh-dts2-1-ga/">Redhat Developer Toolset 2.1</a> 附带的一些软件供应商承诺在2016年之前使用的。</p>
+                    <p>以下是随固定4.8.2发布的已知发行版： - Redhat DTS 2.1，RHEL / CentOS 6。</p>
+                </small>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="footnote-qt">
+            <div class="panel-heading">
+                <small>注 - Qt修改</small>
+            </div>
+            <div class="panel-body">
+                <small>
+                    <p>2016年的主要变化是转向Qt 5，这需要一个PySide的端口和对香草Qt的修改。 2015年11月，CY2016版Qt从5.5.x上调至5.6.x，得到社群的同意，最好与长期支持版本保持一致。 2016年5月，它再次更新至5.6.1，以纳入一些关键的错误修复。</p>
+
+                    <p>需要进行这些修改是为了避免引入影响DCC工具的功能性UI回归，并且仅包含回溯错误修复和尚未被接受到主线Qt分发中的关键更改。 对这些修改的需求并不新鲜，目前一些软件供应商出货他们自己的不同修改的Qt，因此CY2016代表着向前迈出的重要一步，所有软件供应商的目标都是共享相同修改后的Qt。 我们正在与Qt公司合作，在未来的版本中完全不需要这些修改。</p>
+
+                    <p>这些Qt修改可以在Github上从 <a href="https://github.com/autodesk-forks/qtbase/tree/adsk-contrib/vfx/5.6.1">qtbase</a>, <a href="https://github.com/autodesk-forks/qtx11extras/tree/adsk-contrib/vfx/5.6.1">qtx11extras</a> 和 <a href="https://github.com/autodesk-forks/qtdeclarative/tree/adsk-contrib/vfx/5.6.1">qtdeclarative</a>的这些分支中获得 。 任何希望在2016年以后的平台上构建Qt应用程序的人都应该使用对 <a href="http://download.qt.io/official_releases/qt/5.6/5.6.1/">Qt 5.6.1</a> 的这些修改。 </p>
+                </small>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <div class="well well-sm">
+            <p>
+                <small>
+                    在视觉特效参考平台中对任何公司或任何其他实体或其服务或产品所作的任何引用不是一种认可或建议，也不意味着对该公司或实体的质量或目的适用性的任何此类认可或建议，或其服务或产品。 在任何情况下，视觉效果协会都不会直接或间接地对由于使用或依赖此类内容，商品或服务所导致或据称是由于使用或依赖此类内容，商品或服务而导致的任何损失或损失负责或承担责任。 VFX参考平台或Visual Effects Society网站。
+                </small>
+            </p>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
